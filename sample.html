@@ -1,0 +1,62 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Survey form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1 id="title">LTAI Survey form</h1>
+            <h2 id="description">Let us know what you feel about us!!</h2>
+            <from id="survey-form">
+                <!-- name email number age inputs -->
+                <label id="name-label" for="name">Name</label>
+                <br><input type="text" id="name" placeholder="Enter your Name:" required>
+                <br><br><label id="email-label" for="email">Email-ID</label>
+                <br><input type="email" id="email" placeholder="Enter your Email-ID:" required>
+                <br><br><label id="number-label" for="number">Number</label>
+                <br><input type="text" id="number" placeholder="Enter your mobile number:" required>
+                <br><br><label id="age-label" for="age">Age</label>
+                <br><input style="width: 30%;"type="number" min="18" max="60" id="age" placeholder="Enter your age:" required>
+                <hr>
+                <!-- dropdown -->
+                <br><label for="dropdown">Select your department</label>
+                <select id="dropdown" name="department" required>
+                    <option disabled selected value >Your department</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="management">Management</option>
+                    <option value="editorial">Editorial</option>
+                    <option value="design">Design</option>
+                </select>
+                <hr>
+                <!--radio buttons-->
+                <br><p>How much time you give towards LTAI in a week?</p>
+                    <fieldset>
+                        <legend>Choose from</legend>
+                        <input type="radio" value="less than a hour" id="time">less than a hour<br>
+                        <input type="radio" value="1 hour" id="time">1 hour<br>
+                        <input type="radio" value="2 hour" id="time">2 hours<br>
+                        <input type="radio" value="3 hour" id="time">3 hours<br>
+                        <input type="radio" value="more than 3 hours" id="time">more than 3 hours<br>
+                    </fieldset>
+                <hr>
+                <!--check boxes-->
+                <br><p>How many events you took part in?</p>
+                <fieldset>
+                    <legend>Select events</legend>
+                    <input type="checkbox" value="anchal" id="event">Live with anchal<br>
+                    <input type="checkbox" value="meditation" id="event">Meditation week<br>
+                    <input type="checkbox" value="quizes" id="event">Quizes<br>
+                    <input type="checkbox" value="rahul" id="event">Live with rahul<br>
+                </fieldset>
+                <hr>
+                <!--text area-->
+                <br><p>Any comments or suggestions!</p>
+                <textarea id="text" placeholder="write here"></textarea> 
+                <br><br>
+                <input type="submit" id="submit">
+            </from>
+        </div>
+    </body>
+</html>
